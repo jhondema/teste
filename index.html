@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"> 
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" id="login-form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required> 
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="remember-forgot"> 
+                <label for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    Remember me 
+                </label>
+                <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <form action="" id="register-form" style="display: none;">
+            <h1>Register</h1>
+            <div class="input-box">
+                <label for="new-username">New Username</label>
+                <input type="text" id="new-username" name="new-username" placeholder="New Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new-password" placeholder="New Password" required> 
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <form action="" id="forgot-password-form" style="display: none;">
+            <h1>Esqueceu sua senha?</h1>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu endereço de email" required>
+                <i class="bx bx-mail-send"></i>
+            </div>
+            <button type="submit" class="btn">Enviar Recuperação de Senha</button>
+            <div class="back-link" style="display: none;">
+                <p><a href="#" id="back-link">Voltar</a></p>
+            </div>
+        </form>
+        <div class="back-link" style="display: none;">
+            <p><a href="#" id="back-link">Back</a></p>
+        </div>
+        <div class="register-link">
+            <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
+
